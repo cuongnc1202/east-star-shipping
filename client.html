@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khách Hàng</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href="assets/plugins/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css ">
+    <link rel="stylesheet" href="assets/plugins/OwlCarousel/dist/assets/owl.carousel.min.css ">
+    <link rel="stylesheet" href="assets/plugins/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/client.css ">
+
+
+</head>
+
+<body>
+    <!-- Begin header -->
+    <header class="header">
+        <nav id="nav" class="navbar navbar-expand-xl  navbar-light header--navbar">
+            <div class="top--header">
+                <div class="top--header__left">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="header--logo" src="assets/images/logo_header_new-svg.png" alt="">
+                    </a>
+                </div>
+                <div class="top--header__right">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navPrimary"
+                        aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="top--header__social d-none d-xl-flex">
+                        <li><a class="" href="#"><img class="" src="/assets/images/LinkedIn-svg.png" alt=""></a></li>
+                        <li><a class="" href="#"><img class="fb-icon" src="/assets/images/Facebook-icon-svg.png"
+                                    alt=""></a>
+                        </li>
+                        <li><a class="" href="#"><img class="" src="/assets/images/Youtube-svg.png" alt=""></a></li>
+                        <li><a class="" href="#"><img class="twitter-icon" src="/assets/images/Twitter-svg.png"
+                                    alt=""></a>
+                        </li>
+                    </ul>
+                    <div class="dropdown d-none d-xl-flex top--header__flag">
+                        <img alt="" src="assets/images/flag_vn-svg.png" />
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLang" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Vie</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLang">
+                            <a class="dropdown-item" href="index.html"> Vie</a>
+                            <a class="dropdown-item" href="en.html">Eng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-collapse collapse main--menu" id="navPrimary">
+                <div class="d-none d-xl-none d-md-block d-sm-block">
+                    <div class="dropdown d-flex top--header__flag float-right">
+                        <img alt="" src="assets/images/flag_vn-svg.png" />
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLang" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Vie</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLang">
+                            <a class="dropdown-item" href="index.html"> Vie</a>
+                            <a class="dropdown-item" href="#">Eng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link " href="index.html">Trang
+                            chủ</a></li>
+                    <li class="nav-item"><a class="nav-link " href="service.html">Dịch vụ</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="client.html">Danh sách đội
+                            tàu và khách hàng</a></li>
+                    <li class="nav-item"><a class="nav-link " href="recruitment.html">Tuyển dụng</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link " href="training.html">Trung tâm
+                            huấn luyện thuyền viên</a></li>
+                    <li class="nav-item"><a class="nav-link " href="news.html">Tin tức sự
+                            kiện</a></li>
+                    <li class="nav-item"><a class="nav-link " href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+    <section class="expand">
+        <div class="container">
+            <div class="nav--expand">
+                <a aria-current="page" class="nav--expand__home active" href="index.html"><i
+                        class="fa fa-home"></i><span class="nav--expand__home__title"> Trang chủ</span></a>
+                <span class="icon"><i class="fa fa-angle-right"></i></span>
+                <span class="nav--expand__title">Danh sách đội tàu và khách hàng</span>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <!-- Begin fleet -->
+    <section class="fleet">
+        <div class="container">
+            <div class="fleet--header">
+                <h1 class="fleet--header__title">Danh sách đội tàu và khách hàng</h1>
+                <h3 class="fleet--table__title">Danh sách đội tàu công ty sao phương đông cung cấp thuyền viên</h3>
+            </div>
+            <div class="fleet--table table-responsive"
+                style="position: relative; box-shadow: none; overflow: auto scroll; height: 645px;">
+                <div class="">
+                    <table class="table table-striped table-bordered"
+                        style="table-layout: auto; overflow-x: auto; position: relative; text-align: center;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="color: rgb(255, 255, 255); font-weight: 700; font-size: 14px; background-color: rgb(31, 48, 110); border: 1px solid rgb(219, 219, 219); box-sizing: border-box; width: calc(136.333px);">
+                                    <p>STT</p>
+                                </th>
+                                <th
+                                    style="color: rgb(255, 255, 255); font-weight: 700; font-size: 14px; background-color: rgba(31, 48, 110, 0.8); border: 1px solid rgb(219, 219, 219); box-sizing: border-box; width: calc(136.333px);">
+                                    <p>Tên Tàu</p>
+                                </th>
+                                <th
+                                    style="color: rgb(255, 255, 255); font-weight: 700; font-size: 14px; background-color: rgb(31, 48, 110); border: 1px solid rgb(219, 219, 219); box-sizing: border-box; width: calc(136.333px);">
+                                    <p>TT đăng ký</p>
+                                </th>
+                                <th
+                                    style="color: rgb(255, 255, 255); font-weight: 700; font-size: 14px; background-color: rgba(31, 48, 110, 0.8); border: 1px solid rgb(219, 219, 219); box-sizing: border-box; width: calc(136.333px);">
+                                    <p>TT chở hàng</p>
+                                </th>
+                                <th
+                                    style="color: rgb(255, 255, 255); font-weight: 700; font-size: 14px; background-color: rgb(31, 48, 110); border: 1px solid rgb(219, 219, 219); box-sizing: border-box; width: calc(136.333px);">
+                                    <p>Cờ tàu</p>
+                                </th>
+                                <th
+                                    style="color: rgb(255, 255, 255); font-weight: 700; font-size: 14px; background-color: rgba(31, 48, 110, 0.8); border: 1px solid rgb(219, 219, 219); box-sizing: border-box; width: calc(136.333px);">
+                                    <p>Chủ tàu</p>
+                                </th>
+                                <th
+                                    style="color: rgb(255, 255, 255); font-weight: 700; font-size: 14px; background-color: rgb(31, 48, 110); border: 1px solid rgb(219, 219, 219); box-sizing: border-box; width: calc(136.333px);">
+                                    <p>Quản lý tàu</p>
+                                </th>
+                                <th
+                                    style="color: rgb(255, 255, 255); font-weight: 700; font-size: 14px; background-color: rgba(31, 48, 110, 0.8); border: 1px solid rgb(219, 219, 219); box-sizing: border-box; width: calc(136.333px);">
+                                    <p>Quốc tịch thuyền viên</p>
+                                </th>
+                                <th
+                                    style="color: rgb(255, 255, 255); font-weight: 700; font-size: 14px; background-color: rgb(31, 48, 110); border: 1px solid rgb(219, 219, 219); box-sizing: border-box; width: calc(136.333px);">
+                                    <p>Ghi chú</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    1</td>
+                                <td>
+                                    EVER CAST</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    0</td>
+                                <td>
+                                    0</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    NA</td>
+                                <td>
+                                    JW Shipping</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2</td>
+                                <td>
+                                    EVER CALM</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    18658</td>
+                                <td>
+                                    22217</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    NA</td>
+                                <td>
+                                    JW Shipping</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3</td>
+                                <td>
+                                    EVER CORE</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    18658</td>
+                                <td>
+                                    22217</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    NA</td>
+                                <td>
+                                    JW Shipping</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    4</td>
+                                <td>
+                                    TBC PURPOSE</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    22358</td>
+                                <td>
+                                    33196</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    NA</td>
+                                <td>
+                                    TransWorld Ship Management</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    5</td>
+                                <td>
+                                    PACIFIC 06</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    23494</td>
+                                <td>
+                                    33702</td>
+                                <td>
+                                    Marshall Island</td>
+                                <td>
+                                    Kalixenos Limited</td>
+                                <td>
+                                    UK</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    6</td>
+                                <td>
+                                    PACIFIC 05</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    23494</td>
+                                <td>
+                                    33671</td>
+                                <td>
+                                    Marshall Island</td>
+                                <td>
+                                    Fleet Trader Ltd.</td>
+                                <td>
+                                    UK</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    7</td>
+                                <td>
+                                    EVOLUTION (DOUBLE HARMONY)</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    48025</td>
+                                <td>
+                                    88270</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    Hoa Phat Group</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    8</td>
+                                <td>
+                                    THE HARMONY (CETUS OCEAN)</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43656</td>
+                                <td>
+                                    82986</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    Hoa Phat Group</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    9</td>
+                                <td>
+                                    HESSAH</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43735</td>
+                                <td>
+                                    80792</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    Mideast Ship Management Ltd.</td>
+                                <td>
+                                    Mideast Ship Management Ltd.</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    10</td>
+                                <td>
+                                    ALJAZI</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43735</td>
+                                <td>
+                                    80792</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    Mideast Ship Management Ltd.</td>
+                                <td>
+                                    Mideast Ship Management Ltd.</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    11</td>
+                                <td>
+                                    ALANOOD</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43735</td>
+                                <td>
+                                    80792</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    Mideast Ship Management Ltd.</td>
+                                <td>
+                                    Mideast Ship Management Ltd.</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    12</td>
+                                <td>
+                                    SARA</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43735</td>
+                                <td>
+                                    80792</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    Mideast Ship Management Ltd.</td>
+                                <td>
+                                    Mideast Ship Management Ltd.</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    13</td>
+                                <td>
+                                    LAMPARD</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    36449</td>
+                                <td>
+                                    63570</td>
+                                <td>
+                                    Singapore</td>
+                                <td>
+                                    Stamford Shipping</td>
+                                <td>
+                                    Synergy Maritime Group</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    14</td>
+                                <td>
+                                    VIALI</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    36449</td>
+                                <td>
+                                    63493</td>
+                                <td>
+                                    Singapore</td>
+                                <td>
+                                    Stamford Shipping</td>
+                                <td>
+                                    Synergy Maritime Group</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    15</td>
+                                <td>
+                                    ZOLA</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    36353</td>
+                                <td>
+                                    63667</td>
+                                <td>
+                                    Singapore</td>
+                                <td>
+                                    Stamford Shipping</td>
+                                <td>
+                                    Synergy Maritime Group</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    16</td>
+                                <td>
+                                    BETTY K II</td>
+                                <td>
+                                    Tàu chở hàng bách hóa</td>
+                                <td>
+                                    2546</td>
+                                <td>
+                                    3482</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    MMS</td>
+                                <td>
+                                    Alpha Navigation</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    17</td>
+                                <td>
+                                    BETTY K I</td>
+                                <td>
+                                    Tàu chở hàng bách hóa</td>
+                                <td>
+                                    2546</td>
+                                <td>
+                                    3482</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    MMS</td>
+                                <td>
+                                    Alpha Navigation</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    18</td>
+                                <td>
+                                    BULK TITAN</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    32354</td>
+                                <td>
+                                    58090</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    Daiichi Kisen Co., Ltd.</td>
+                                <td>
+                                    Alfa Ship Manager Co., Pte.</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    19</td>
+                                <td>
+                                    BELAWAN</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    2054</td>
+                                <td>
+                                    21973</td>
+                                <td>
+                                    Hong Kong</td>
+                                <td>
+                                    Daiichi Kisen Co., Ltd.</td>
+                                <td>
+                                    Alfa Ship Manager Co., Pte.</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    20</td>
+                                <td>
+                                    HERMINE OLDENDORFF</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    107684</td>
+                                <td>
+                                    209330</td>
+                                <td>
+                                    Portugal</td>
+                                <td>
+                                    Oldendoroff </td>
+                                <td>
+                                    Zeaborn Shipanagement</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    21</td>
+                                <td>
+                                    HANS OLDENDORFF</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    107684</td>
+                                <td>
+                                    209200</td>
+                                <td>
+                                    Portugal</td>
+                                <td>
+                                    Oldendoroff </td>
+                                <td>
+                                    Zeaborn Shipanagement</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    22</td>
+                                <td>
+                                    E.R. CANADA</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    6008</td>
+                                <td>
+                                    68025</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    E.R. Schiffahrt</td>
+                                <td>
+                                    Zeaborn Shipanagement</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    23</td>
+                                <td>
+                                    E.R. BERLIN</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    6008</td>
+                                <td>
+                                    45600</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    E.R. Schiffahrt</td>
+                                <td>
+                                    Zeaborn Shipanagement</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    24</td>
+                                <td>
+                                    E.R. TIANPING</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    8533</td>
+                                <td>
+                                    101491</td>
+                                <td>
+                                    Portugal</td>
+                                <td>
+                                    E.R. Schiffahrt</td>
+                                <td>
+                                    Zeaborn Shipanagement</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    25</td>
+                                <td>
+                                    E.R. KOBE</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    5992</td>
+                                <td>
+                                    68196</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    E.R. Schiffahrt</td>
+                                <td>
+                                    Zeaborn Shipanagement</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    26</td>
+                                <td>
+                                    E.R. LONDON</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    6008</td>
+                                <td>
+                                    45600</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    E.R. Schiffahrt</td>
+                                <td>
+                                    Zeaborn Shipanagement</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    27</td>
+                                <td>
+                                    E.R. SEOUL</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    6008</td>
+                                <td>
+                                    50202</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    E.R. Schiffahrt</td>
+                                <td>
+                                    Zeaborn Shipanagement</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    28</td>
+                                <td>
+                                    MAERSK KWANGYANG</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    2800</td>
+                                <td>
+                                    0</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    29</td>
+                                <td>
+                                    MAERSK HAIPHONG</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    2800</td>
+                                <td>
+                                    0</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    30</td>
+                                <td>
+                                    &quot;ORIENTAL ARROW&quot;</td>
+                                <td>
+                                    Tàu Container</td>
+                                <td>
+                                    1027</td>
+                                <td>
+                                    12268</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    31</td>
+                                <td>
+                                    PRISCILLA</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43829</td>
+                                <td>
+                                    82543</td>
+                                <td>
+                                    Liberia</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    32</td>
+                                <td>
+                                    FORTUNE SYMPHONY</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43400</td>
+                                <td>
+                                    81600</td>
+                                <td>
+                                    Isle of Man</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    33</td>
+                                <td>
+                                    FUJISUKA</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    27470</td>
+                                <td>
+                                    45429</td>
+                                <td>
+                                    Marshall Island</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    34</td>
+                                <td>
+                                    OCEAN ADVENTURE</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43400</td>
+                                <td>
+                                    81600</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    35</td>
+                                <td>
+                                    SARAH</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    30046</td>
+                                <td>
+                                    52415</td>
+                                <td>
+                                    Isle of Man</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    36</td>
+                                <td>
+                                    FUKUYAMA STAR</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    35607</td>
+                                <td>
+                                    64012</td>
+                                <td>
+                                    United Kingdom</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    37</td>
+                                <td>
+                                    TENWA MARU</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    32431</td>
+                                <td>
+                                    57763</td>
+                                <td>
+                                    Marshall Island</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    38</td>
+                                <td>
+                                    ULTRA JAGUAR</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43400</td>
+                                <td>
+                                    81580</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    39</td>
+                                <td>
+                                    ULTRA COUGAR</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43400</td>
+                                <td>
+                                    81560</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    40</td>
+                                <td>
+                                    HOEGH BRASILIA</td>
+                                <td>
+                                    Pure Car Carrier</td>
+                                <td>
+                                    51731</td>
+                                <td>
+                                    17252</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    41</td>
+                                <td>
+                                    ULTRA PROGRESSION</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    35607</td>
+                                <td>
+                                    64012</td>
+                                <td>
+                                    Singapore</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    42</td>
+                                <td>
+                                    FD ANGELICA</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43007</td>
+                                <td>
+                                    81588</td>
+                                <td>
+                                    Isle of Man</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    43</td>
+                                <td>
+                                    LENA B</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43400</td>
+                                <td>
+                                    81600</td>
+                                <td>
+                                    Isle of Man</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    44</td>
+                                <td>
+                                    IOANNAL L</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43066</td>
+                                <td>
+                                    81837</td>
+                                <td>
+                                    United Kingdom</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    45</td>
+                                <td>
+                                    LIVIA ROSE</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43066</td>
+                                <td>
+                                    81828</td>
+                                <td>
+                                    United Kingdom</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    46</td>
+                                <td>
+                                    LAURENCE FRANCOISE</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    43400</td>
+                                <td>
+                                    81600</td>
+                                <td>
+                                    United Kingdom</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    47</td>
+                                <td>
+                                    KK PIRAPO</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    51905</td>
+                                <td>
+                                    98704</td>
+                                <td>
+                                    Panama</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    48</td>
+                                <td>
+                                    BUNJI</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    51905</td>
+                                <td>
+                                    98704</td>
+                                <td>
+                                    Isle of Man</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    49</td>
+                                <td>
+                                    AFRICAN FLAMINGO</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    35606</td>
+                                <td>
+                                    63926</td>
+                                <td>
+                                    Isle of Man</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    50</td>
+                                <td>
+                                    CF DIAMOND</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    32378</td>
+                                <td>
+                                    57700</td>
+                                <td>
+                                    Marshall Island</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    51</td>
+                                <td>
+                                    TENRO MARU</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    32540</td>
+                                <td>
+                                    57593</td>
+                                <td>
+                                    Isle of Man</td>
+                                <td>
+                                    Kambara Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    52</td>
+                                <td>
+                                    PURE VISION</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    33044</td>
+                                <td>
+                                    57000</td>
+                                <td>
+                                    Singapore</td>
+                                <td>
+                                    &quot;Rhodium Pure Trade PTE LTD &quot;</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    53</td>
+                                <td>
+                                    PURE TRADER</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    32987</td>
+                                <td>
+                                    56855</td>
+                                <td>
+                                    Singapore</td>
+                                <td>
+                                    &quot;Rhodium Pure Trade PTE LTD &quot;</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    54</td>
+                                <td>
+                                    LOWLANDS BEACON</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    34795</td>
+                                <td>
+                                    61400</td>
+                                <td>
+                                    Marshall Island</td>
+                                <td>
+                                    Hisamoto Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    55</td>
+                                <td>
+                                    ATLANTIC GRACE</td>
+                                <td>
+                                    Tàu chở hàng rời</td>
+                                <td>
+                                    21192</td>
+                                <td>
+                                    33709</td>
+                                <td>
+                                    Marshall Island</td>
+                                <td>
+                                    Hisamoto Kisen Co., Ltd.</td>
+                                <td>
+                                    UMMS</td>
+                                <td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End fleet -->
+    <!-- Begin customer -->
+    <section class="customer">
+        <div class="container customer--content">
+            <div class="customer--content__title">
+                <h3>Khách hàng của chúng tôi</h3>
+            </div>
+            <div class="customer--list">
+                <div class="owl-carousel owl-theme" id="customer">
+                    <div class="customer--item">
+                        <div class="item__image">
+                            <a class="item" href="https://www.alphanavigation.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="our-clients-content-img"><img src="assets/images/alpha.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="customer--item">
+                        <div class="item__image">
+                            <a class="item" href="https://www.bahri.sa/" target="_blank" rel="noopener noreferrer">
+                                <div class="our-clients-content-img"><img src="assets/images/bahri.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="customer--item">
+                        <div class="item__image">
+                            <a class="item" href="https://www.synergymarinegroup.com" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="our-clients-content-img"><img src="assets/images/synergy.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="customer--item">
+                        <div class="item__image">
+                            <a class="item" href="http://www.unimarships.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="our-clients-content-img"><img src="assets/images/UMMS.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="customer--item">
+                        <div class="item__image">
+                            <a class="item" href="https://zea-ship.com/" target="_blank" rel="noopener noreferrer">
+                                <div class="our-clients-content-img"><img src="assets/images/zeaborn.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End customer -->
+    <!-- Begin footer -->
+    <footer>
+        <div class="container footer">
+            <div class="row">
+                <div class="footer--logo col-xl-6 col-md-12 col-sm-12">
+                    <a href="index.html"><img class="img-fluid" src="assets/images/logo_header_new-svg.png" alt=""></a>
+                </div>
+                <div class="footer--content col-xl-6 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="item col-xl-6 col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="item--icon col-xl-2 col-md-1 col-1">
+                                    <img src="assets/images/company-svg.png" alt="">
+                                </div>
+                                <div class="item--content col-xl-10 col-md-11 col-11">
+                                    <p>Văn phòng: Số 29 đường số 4, khu đô thị ven sông Lạch Tray, Phường Vĩnh Niệm,
+                                        Quận Lê
+                                        Chân, Thành phố Hải Phòng</p>
+                                    <a href="">xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-xl-6 col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="item--icon col-xl-2 col-md-1 col-1">
+                                    <img src="assets/images/home-svg.png" alt="">
+                                </div>
+                                <div class="item--content col-xl-10 col-md-11 col-11">
+                                    <p>Chỗ ở học viên:
+                                        Số 365 HK 7 khu đô thị ven sông Lạch Tray, phường Vĩnh Niệm, quận Lê Chân, thành
+                                        phố
+                                        Hải Phòng thuộc sở hữu của Công ty TNHH Lưu An Tín</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-xl-6 col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="item--icon col-xl-2 col-md-1 col-1">
+                                    <img src="assets/images/telephone-svg.png" alt="">
+                                </div>
+                                <div class="item--content col-xl-10 col-md-11 col-11">
+                                    <p>Điện thoại: <a href="">+84 225 3734698</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item--icon col-xl-2 col-md-1 col-1">
+                                    <img src="assets/images/hotline-svg.png" alt="">
+                                </div>
+                                <div class="item--content col-xl-10 col-md-11 col-11">
+                                    <p>Hot line: <a href="">+84 904 248486</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item--icon col-xl-2 col-md-1 col-1">
+                                    <img src="assets/images/mail-svg.png" alt="">
+                                </div>
+                                <div class="item--content col-xl-10 col-md-11 col-11">
+                                    <p>E-mail: <a href="">crew@eastar-shipping.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-xl-6 col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="item--icon col-xl-2 col-md-1 col-1">
+                                    <img src="assets/images/location-svg.png" alt="">
+                                </div>
+                                <div class="item--content col-xl-10 col-md-11 col-11">
+                                    <p>Địa chỉ đăng ký kinh doanh:
+                                        Thửa 352, Lô HK 6, Thuộc Dự Án Khu Đô Thị Ven Sông Lạch Tray, Phường Vĩnh
+                                        Niệm, Quận Lê Chân, Thành phố Hải Phòng, Việt Nam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer--copyright row">
+                <div class="col-12">
+                    <p>© Copyrights 2022 East Star Shipping Co., Ltd.. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/plugins/wow/dist/wow.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
